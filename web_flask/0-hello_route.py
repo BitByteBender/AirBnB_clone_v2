@@ -11,6 +11,6 @@ def Hello_Flask():
     return ("Hello HBNB!")
 
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     """ Runs the Flask app """
-    web_flask.run(host="0.0.0.0", port=5000)
+    web_flask.run(host='0.0.0.0', port=5000)
