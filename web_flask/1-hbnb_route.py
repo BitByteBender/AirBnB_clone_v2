@@ -4,7 +4,6 @@
     Flask app instance creation
 """
 from flask import Flask
-""" Flask app instance creation """
 web_flask = Flask(__name__)
 
 
@@ -13,7 +12,15 @@ def main_route():
     """
         Returns a string as a response
     """
-    return "Hello HBNB!"
+    return ("Hello HBNB!")
+
+
+@web_flask.route("/hbnb", strict_slashes=False)
+def second_route():
+    """
+        Returns a string as a response
+    """
+    return ("HBNB")
 
 
 if __name__ == "__main__":
