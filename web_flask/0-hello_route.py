@@ -6,7 +6,7 @@ web_flask = Flask(__name__)
 
 
 @web_flask.route('/', strict_slashes=False)
-def hbnb():
+def display():
     """
         Returns a string as a response
     """
