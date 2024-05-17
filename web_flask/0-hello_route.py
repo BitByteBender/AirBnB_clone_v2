@@ -2,19 +2,19 @@
 """ Import Flask class from flask module """
 from flask import Flask
 """ Flask app instance creation """
-app = Flask(__name__)
+web_flask = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def display():
+@web_flask.route('/', strict_slashes=False)
+def hello_hbnb():
     """
         Returns a string as a response
     """
-    return 'Hello HBNB!'
+    return "Hello HBNB!"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """
         Runs the Flask app
     """
-    app.run(host='0.0.0.0', port=5000)
+    web_flask.run(host="0.0.0.0", port=5000)
