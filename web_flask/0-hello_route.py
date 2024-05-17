@@ -6,7 +6,7 @@ web_flask = Flask(__name__)
 
 
 @web_flask.route('/', strict_slashes=False)
-def Hello_Flask():
+def Hello():
     """ Returns a string as a response """
     return ("Hello HBNB!")
 
