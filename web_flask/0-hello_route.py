@@ -10,11 +10,11 @@ def display():
     """
         Returns a string as a response
     """
-    return ("Hello HBNB!")
+    return 'Hello HBNB!'
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     """
         Runs the Flask app
     """
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host='0.0.0.0', port=5000)
