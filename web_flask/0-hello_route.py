@@ -2,7 +2,7 @@
 # Import Flask class from flask module
 from flask import Flask
 # Flask app instance creation
-web_flask = Flask(__name__) 
+web_flask = Flask(__name__)
 
 
 # Defining a route for the root URL (/)
