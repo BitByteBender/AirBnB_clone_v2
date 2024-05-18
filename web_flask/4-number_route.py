@@ -52,16 +52,12 @@ def extra_dynamic_route(var):
     return ("Python " + str(var))
 
 
-@web_flask.route("/number/<n>", strict_slashes=False)
+@web_flask.route("/number/<int:n>", strict_slashes=False)
 def third_route(n):
     """
         Returns an integer based on n as a response
     """
-    try:
-        num = int(n)
-        return (str(num))
-    except ValueError:
-        abort(404)
+    return (str(n) + " is a number")
 
 
 if __name__ == "__main__":
