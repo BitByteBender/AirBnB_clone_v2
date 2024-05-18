@@ -3,6 +3,7 @@
     Import Flask class from flask module
     Flask app instance creation
 """
+import __init__
 from flask import Flask
 """ Flask app instance creation """
 web_flask = Flask(__name__)
