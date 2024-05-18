@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
     Import Flask class from flask module
     Flask app instance creation
