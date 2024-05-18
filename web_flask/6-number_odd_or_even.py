@@ -73,10 +73,11 @@ def number_odd_even_route(n):
     """
         Renders an HTML page with an odd or even
     """
+    fpath = '6-number_odd_or_even.html'
     if (n % 2 == 0):
-        return render_template("6-number_odd_or_even.html", num=n, num_check="even")
+        return render_template(fpath, num=n, num_check="even")
     else:
-        return render_template("6-number_odd_or_even.html", num=n, num_check="odd")
+        return render_template(fpath, num=n, num_check="odd")
 
 
 if __name__ == "__main__":
