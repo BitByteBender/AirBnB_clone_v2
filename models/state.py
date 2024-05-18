@@ -21,5 +21,5 @@ class State(BaseModel, Base):
                     returns a list of City objs from storage
             """
             from models import storage
-            return ([c for c in storage.all(City).value()
-                    if c.state_id == self.id == self.id])
+            return ([c for c in storage.all(City).values()
+                    if c.state_id == self.id])
