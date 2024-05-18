@@ -53,10 +53,10 @@ def extra_dynamic_route(var):
 
 
 @web_flask.route("/number/<int:n>", strict_slashes=False)
-def third_route(var):
+def third_route(n):
     """
-        Returns an integer based on var as a response
-    """    
+        Returns an integer based on n as a response
+    """
     return (str(n))
 
 
