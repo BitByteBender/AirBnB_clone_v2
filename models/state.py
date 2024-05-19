@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ State Module for HBNB project """
-from models.city import City
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
@@ -20,6 +19,7 @@ class State(BaseModel, Base):
                 Getter method:
                     returns a list of City objs from storage
             """
+            from models.city import City
             from models import storage
             return ([c for c in storage.all(City).values()
                     if c.state_id == self.id])

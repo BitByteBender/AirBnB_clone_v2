@@ -53,4 +53,3 @@ class Place(BaseModel, Base):
         """ linked amenities """
         if isinstance(param, Amenity):
             self.amenity_ids.append(param.id)
-
